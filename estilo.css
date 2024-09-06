@@ -6,7 +6,9 @@
 
 /*layout*/
 
-html, body, .capa {
+html,
+body,
+.capa {
 	height: 100%;
 	overflow: auto;
 }
@@ -31,7 +33,7 @@ body {
 }
 
 nav.navbar-transparente {
-	padding: 15px 0px;
+	padding: 15px 0;
 	background: rgba(0, 0, 0, 0.6);
 	border: none;
 }
@@ -47,15 +49,16 @@ nav.navbar-transparente {
 	margin: 16px 10px;
 }
 
-.navbar-inverse .navbar-nav>li>, #rodape .nav a {
+.navbar-inverse .navbar-nav>li,
+#rodape .nav a {
 	color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover, #rodape .nav a:hover {
+.navbar-inverse .navbar-nav>li>a:hover,
+#rodape .nav a:hover {
 	color: #9bf0e1;
 	background: none;
 }
-
 
 /* -- Imagem de capa -- */
 .capa {
@@ -96,7 +99,6 @@ nav.navbar-transparente {
 .btn-branco:hover {
 	background-color: white;
 	color: black;
-
 }
 
 /*======Seção de Serviços======*/
@@ -107,7 +109,7 @@ nav.navbar-transparente {
 }
 
 .albuns {
-	padding: 10px 0px 10px 0px;
+	padding: 10px 0;
 }
 
 /*======Seção de Recursos======*/
@@ -116,21 +118,21 @@ nav.navbar-transparente {
 	padding-bottom: 20px;
 }
 
-.rotacionar{
+.rotacionar {
 	transform: rotate(30deg);
 	-ms-transform: rotate(30deg);
 	-webkit-transform: rotate(30deg);
 	padding-left: 80px;
 }
 
-/*======Seção de Recursos======*/
+/*======Seção de Rodapé======*/
 footer {
 	background: black;
-	padding: 50px 0px 20px 0px;
+	padding: 50px 0 20px;
 	position: relative;
 }
 
-.item-rede-social{
+.item-rede-social {
 	float: right;
 }
 
@@ -153,13 +155,14 @@ h3 {
 	letter-spacing: -0.04em;
 }
 
-#rodape h4{
-	color:#919496;
+#rodape h4 {
+	color: #919496;
 	font-size: 12px;
 	text-transform: uppercase;
 }
 
-#servicos h2, #servicos h3 {
+#servicos h2,
+#servicos h3 {
 	color: #7c25f8;
 }
 
@@ -168,35 +171,34 @@ h3 {
 }
 
 /*Media queries*/
-/*XS <768*/
-@media  screen and (max-width:767px) {
-	h1{
+/* XS <768 */
+@media screen and (max-width: 767px) {
+	h1 {
 		font-size: 50px;
 	}
-	.btn-custom{
+
+	.btn-custom {
 		margin: 10px 15px;
 	}
-	padding: 10px 35px;
-	margin: 10px 15px;
 }
 
-*/sm*/
-@media screen and (min-width: 768px){
-	h1{
+/* SM >=768 */
+@media screen and (min-width: 768px) {
+	h1 {
 		font-size: 70px;
 	}
 }
 
-*/md*/
-@media screen and (min-width: 992px){
-	h1{
+/* MD >=992 */
+@media screen and (min-width: 992px) {
+	h1 {
 		font-size: 80px;
 	}
 }
 
-*/lg*/
-@media screen and (min-width: 1200px){
-	h1{
+/* LG >=1200 */
+@media screen and (min-width: 1200px) {
+	h1 {
 		font-size: 100px;
 	}
 }
