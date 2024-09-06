@@ -6,14 +6,26 @@
 
 /*layout*/
 
-/*Barra de navegação*/
-.img-logo{
-    height: 40px;
-    width: 132px;
-    display: block;
-    background: url(img/spotify.svg) no-repeat;
-    background-size: contain;
-    color: transparent;
+html, body, .capa {
+	height: 100%;
+}
+
+body {
+	background: url('img/capa.png'),
+				url('img/ruido.png'),
+				linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+/* -- Barra de navegação -- */
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('img/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
 }
 
 nav.navbar-transparente {
@@ -34,13 +46,61 @@ nav.navbar-transparente {
 }
 
 .navbar-inverse .navbar-nav>li>a {
+	color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #23eec9 !important;
+  }
+  
+
+/* -- Imagem de capa -- */
+.capa {
+	display: table;
+	width: 100%;
+}
+
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* -- Botoes -- */
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo {
+	background: #7c25f8;
+}
+.btn-roxo:hover {
+	background-color: #1DB954
+	;
 	color: white;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
-	color: cadetblue;
+.btn-branco {
+	border: 2px solid white;
+}
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+	
+}
+/* ========================= Tipografia ======================== */
+h1 {
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
 }
 
-/* -- Imagem de capa -- */
-
-/*Tipografia*/
